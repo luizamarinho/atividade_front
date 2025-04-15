@@ -1,6 +1,6 @@
-let valor_ref = document.querySelector('.valor');
-let quantidade_ref = document.querySelector('.quantidade');
-let resultado_ref = document.querySelector('.resultado');
+let valor_ref = document.querySelector(".valor");
+let quantidade_ref = document.querySelector(".quantidade");
+let resultado_ref = document.querySelector(".resultado");
 
 function adicionar() {
   let valor = parseFloat(valor_ref.value);
@@ -9,7 +9,7 @@ function adicionar() {
   if (!isNaN(valor)) {
     let resultado = valor * quantidade;
     console.log(resultado);
-    resultado_ref.innerHTML = 'Total a pagar: R$' + resultado.toString();
-    resultado_ref.classList.remove('sumir');
+    resultado_ref.innerHTML = "Total a pagar: R$" + resultado.toFixed(2);
+    resultado_ref.classList.remove("sumir");
   }
 }
